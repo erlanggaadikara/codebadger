@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css, jsx } from "@emotion/react";
 import { observer } from "mobx-react-lite";
 
 export default observer((props: any) => {
@@ -6,8 +8,7 @@ export default observer((props: any) => {
       onClick={props.onClick}
       type="button"
       className={
-        props.className +
-        " rounded-md border shadow-sm focus:outline-none m-2"
+        props.className + " rounded-md border shadow-sm focus:outline-none m-2"
       }
       style={props.style}
       css={props.css}

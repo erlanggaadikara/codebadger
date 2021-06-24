@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css, jsx } from "@emotion/react";
 import { observer } from "mobx-react-lite";
 
 export default observer((props: any) => {
