@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Banner from "Page/Landing/Banner";
 import Navbar from "Page/Landing/Navbar";
 import Techstack from "Page/Landing/Techstack";
+import Portofolio from "Page/Landing/Portofolio";
 
 interface propType {
   path?: RouteComponentProps;
@@ -51,6 +52,7 @@ export default observer((props: propType) => {
         <div className="flex flex-col">
           <Banner />
           <Techstack />
+          <Portofolio />
         </div>
       </div>
     </>

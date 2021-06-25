@@ -6,7 +6,7 @@ import Text from "libs/ui/Text";
 export default observer(() => {
   return (
     <div className="w-screen flex justify-center items-center flex-col py-14">
-      <Text className="text-5xl">Tech Stack</Text>
+      <Text className="text-5xl font-semibold">Tech Stack</Text>
       <div className="flex flex-1 justify-center flex-row items-center pt-14 flex-wrap">
         <img src={"images/react.png"} className="w-28 h-24 m-10" />
         <img src={"images/mobx.png"} className="w-24 h-24 m-10" />
