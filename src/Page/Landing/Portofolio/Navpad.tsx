@@ -4,6 +4,7 @@ import { observer } from "mobx-react-lite";
 import Avatar from "libs/ui/Avatar";
 import Button from "libs/ui/Button";
 import Text from "libs/ui/Text";
+import { isIOS, isAndroid, isMacOs } from "react-device-detect";
 
 export default observer(() => {
   return (
@@ -24,9 +25,13 @@ export default observer(() => {
           caption="Visit App"
           className="font-thin bg-white"
           onClick={() =>
-            window.open(
-              "https://play.google.com/store/apps/details?id=com.andromedia.navkaraoke"
-            )
+            isIOS && isMacOs
+              ? window.open(
+                  "https://apps.apple.com/gb/app/nav-karaoke-keluarga/id1501313818"
+                )
+              : window.open(
+                  "https://play.google.com/store/apps/details?id=com.andromedia.navkaraoke"
+                )
           }
         />
       </div>
